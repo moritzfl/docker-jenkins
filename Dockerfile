@@ -4,7 +4,7 @@ MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-8-jre-headless \
     git \
-    svn \
+    subversion \
     maven \
     gradle \
     ant && \
