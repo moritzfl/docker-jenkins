@@ -6,11 +6,7 @@ Sets up a container with jenkins installed listening on port 8080.
 
 To run the container, do the following:
 
-    docker run -d -P aespinosa/jenkins
-    
-    docker ps
-    CONTAINER ID        IMAGE                       COMMAND                CREATED             STATUS              PORTS                     NAMES
-    1131d37c38b1        aespinosa/jenkins:latest    java -jar /opt/jenki   12 seconds ago      Up 12 seconds       0.0.0.0:49153->8080/tcp   drunk_fermi
+    docker run -d -P moritzf/jenkins
 
 Your jenkins instance is now available by going to http://localhost:49153 .
 
@@ -22,19 +18,9 @@ By default, JENKINS_HOME is set to /jenkins.  The best way to persist or import 
   * http://aespinosa.github.io/blog/2014-03-05-import-jenkins-configuration-to-docker.html
   * https://github.com/aespinosa/docker-jenkins/blob/master/test/jenkins_test.bats#L3
 
-## Building
-
-To build the image, simply invoke
-
-    docker build github.com/aespinosa/docker-jenkins
-
-A prebuilt container is also available in the docker index
-
-    docker pull aespinosa/jenkins
-
-
 ## Author
 
+  * Moritz Flöter
   * Allan Espinosa (<allan.espinosa@outlook.com>)
   * Gwenn Etourneau (<g.etourneau@free.fr>)
 
