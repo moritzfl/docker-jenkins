@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 
 RUN apt-get update && \
-    apt-get --no-install-recommends install -q -y openjdk-8-jre-headless \
+    apt-get --no-install-recommends install -q -y openjdk-8-jdk \
     git \
     subversion \
     maven \
