@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-8-jdk \
     git \
     subversion \
+    texlive-full \
     maven \
     gradle \
     ant && \
