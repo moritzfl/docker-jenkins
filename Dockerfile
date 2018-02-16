@@ -8,6 +8,7 @@ RUN apt-get update && \
     texlive-full \
     docker.io \
     maven \
+    genisoimage \
     gradle \
     ant && \
     rm -rf /var/lib/apt/lists/*
