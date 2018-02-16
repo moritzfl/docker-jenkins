@@ -6,6 +6,7 @@ RUN apt-get update && \
     git \
     subversion \
     texlive-full \
+    docker.io \
     maven \
     gradle \
     ant && \
