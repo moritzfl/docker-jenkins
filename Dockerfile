@@ -1,12 +1,14 @@
 FROM ubuntu:16.04
 
+RUN apt-get update && apt-get install -y software-properties-common
+
 RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-8-jdk \
     git \
     subversion \
     texlive-full \
-    python-pygments \
     pandoc \
+    python-pygments \
     docker.io \
     maven \
     genisoimage \
