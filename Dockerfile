@@ -6,6 +6,7 @@ RUN apt-get update && \
     subversion \
     texlive-full \
     python-pygments \
+    pandoc \
     docker.io \
     maven \
     genisoimage \
