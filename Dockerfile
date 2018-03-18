@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y software-properties-common
 RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-8-jdk \
     git \
+    make \
     subversion \
     texlive-full \
     pandoc \
