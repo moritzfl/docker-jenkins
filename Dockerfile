@@ -17,7 +17,7 @@ RUN apt-get update && \
     ant && \
     rm -rf /var/lib/apt/lists/*
     
-ADD http://mirrors.jenkins-ci.org/war/2.107/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/2.151/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 
