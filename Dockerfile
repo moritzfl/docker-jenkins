@@ -1,4 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.10
+
+RUN apt-get update && apt-get install -y tzdata
+
+RUN echo "Europe/Dublin" > /etc/timezone    
+RUN dpkg-reconfigure -f noninteractive tzdata
 
 RUN apt-get update && apt-get install -y software-properties-common
 
@@ -23,4 +28,4 @@ ENV JENKINS_HOME /jenkins
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
-CMD [""]
+CMD [""] 
